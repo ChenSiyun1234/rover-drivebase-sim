@@ -1,0 +1,51 @@
+{
+  "name": "watchdog",
+  "case": {
+    "controller": "open",
+    "mu": 0.6,
+    "velocity": 0.3,
+    "yaw_deg_s": 0.0,
+    "obstacle": false,
+    "stall": false,
+    "behaviour": "limit",
+    "watchdog": true
+  },
+  "mass_kg": 50.0,
+  "duration_s": 6.0,
+  "displacement_m": [
+    1.358182410599123,
+    -8.553890650476786e-16,
+    -1.1335479443985719e-08
+  ],
+  "mean_yaw_deg_s": -7.515375023584912e-17,
+  "minimum_voltage_V": 25.065351883694525,
+  "maximum_bus_current_A": 3.366203276389985,
+  "mean_bus_current_A": 0.09347682608571231,
+  "peak_winding_current_A": 2.500001366088817,
+  "fault_codes": [
+    13,
+    13,
+    13,
+    13,
+    13,
+    13
+  ],
+  "first_fault_times_s": [
+    2.242,
+    2.242,
+    2.242,
+    2.242,
+    2.242,
+    2.242
+  ],
+  "fault_count": 6,
+  "peak_bogie_angle_deg": 0.002423401149099005,
+  "peak_tilt_deg": 0.0022912655440382227,
+  "can_sent": 3600,
+  "can_dropped": 0,
+  "can_feedback_received": 1800,
+  "electrical_samples": 6000,
+  "physics_samples": 3000,
+  "fixture_sha256": "d6b0d446d37712378fae19bf54a5fff29b495fdff88f68db4d4b79da962db302",
+  "wall_seconds": 2.0755348000020604
+}

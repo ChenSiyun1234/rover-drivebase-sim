@@ -1,0 +1,5 @@
+{
+  "command": "python -m pytest tests -q -p no:cacheprovider",
+  "returncode": 0,
+  "wall_seconds": 3.9492862000042805
+}

@@ -1,0 +1,51 @@
+{
+  "name": "turn_0.6_open",
+  "case": {
+    "controller": "open",
+    "mu": 0.6,
+    "velocity": 0.0,
+    "yaw_deg_s": 30.0,
+    "obstacle": false,
+    "stall": false,
+    "behaviour": "limit",
+    "watchdog": false
+  },
+  "mass_kg": 50.0,
+  "duration_s": 6.0,
+  "displacement_m": [
+    -0.10251954866832558,
+    -0.032859775810643616,
+    5.856208197135837e-05
+  ],
+  "mean_yaw_deg_s": 17.018280368152187,
+  "minimum_voltage_V": 24.55705691389739,
+  "maximum_bus_current_A": 16.073577433118267,
+  "mean_bus_current_A": 11.510690297300288,
+  "peak_winding_current_A": 8.0,
+  "fault_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "first_fault_times_s": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "fault_count": 0,
+  "peak_bogie_angle_deg": 0.08746524419124681,
+  "peak_tilt_deg": 0.01937447304615032,
+  "can_sent": 8400,
+  "can_dropped": 0,
+  "can_feedback_received": 4200,
+  "electrical_samples": 6000,
+  "physics_samples": 3000,
+  "fixture_sha256": "d6b0d446d37712378fae19bf54a5fff29b495fdff88f68db4d4b79da962db302",
+  "wall_seconds": 4.256323200002953
+}

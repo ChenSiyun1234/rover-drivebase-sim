@@ -1,0 +1,51 @@
+{
+  "name": "turn_trip",
+  "case": {
+    "controller": "open",
+    "mu": 0.9,
+    "velocity": 0.0,
+    "yaw_deg_s": 30.0,
+    "obstacle": false,
+    "stall": false,
+    "behaviour": "trip",
+    "watchdog": false
+  },
+  "mass_kg": 50.0,
+  "duration_s": 6.0,
+  "displacement_m": [
+    1.3794665211016404,
+    0.04851601010953456,
+    2.6957089321766325e-05
+  ],
+  "mean_yaw_deg_s": 0.17112338832904025,
+  "minimum_voltage_V": 24.341416307911285,
+  "maximum_bus_current_A": 21.464591968993282,
+  "mean_bus_current_A": 6.981211347863413,
+  "peak_winding_current_A": 7.97814606698223,
+  "fault_codes": [
+    10,
+    10,
+    1,
+    1,
+    1,
+    1
+  ],
+  "first_fault_times_s": [
+    1.346,
+    1.308,
+    null,
+    null,
+    null,
+    null
+  ],
+  "fault_count": 2,
+  "peak_bogie_angle_deg": 0.061920369475451036,
+  "peak_tilt_deg": 0.0166975364587895,
+  "can_sent": 8400,
+  "can_dropped": 0,
+  "can_feedback_received": 4200,
+  "electrical_samples": 6000,
+  "physics_samples": 3000,
+  "fixture_sha256": "3e7e9111a6d5760cd719b10e28248a7063b6ef024d1f13dc5a600368d80664d3",
+  "wall_seconds": 2.2054871000000276
+}

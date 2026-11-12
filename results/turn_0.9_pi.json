@@ -1,0 +1,51 @@
+{
+  "name": "turn_0.9_pi",
+  "case": {
+    "controller": "pi",
+    "mu": 0.9,
+    "velocity": 0.0,
+    "yaw_deg_s": 30.0,
+    "obstacle": false,
+    "stall": false,
+    "behaviour": "limit",
+    "watchdog": false
+  },
+  "mass_kg": 50.0,
+  "duration_s": 6.0,
+  "displacement_m": [
+    -0.20599674702601156,
+    -0.3190587316690415,
+    0.00020447699409692488
+  ],
+  "mean_yaw_deg_s": 23.396593106992615,
+  "minimum_voltage_V": 23.70441506914794,
+  "maximum_bus_current_A": 37.389623356125455,
+  "mean_bus_current_A": 27.377853923738247,
+  "peak_winding_current_A": 8.0,
+  "fault_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "first_fault_times_s": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "fault_count": 0,
+  "peak_bogie_angle_deg": 0.3945661034382946,
+  "peak_tilt_deg": 0.07961992773339797,
+  "can_sent": 8400,
+  "can_dropped": 0,
+  "can_feedback_received": 4200,
+  "electrical_samples": 6000,
+  "physics_samples": 3000,
+  "fixture_sha256": "3e7e9111a6d5760cd719b10e28248a7063b6ef024d1f13dc5a600368d80664d3",
+  "wall_seconds": 4.025924900000973
+}

@@ -1,0 +1,100 @@
+<mujoco model="generic_rocker_bogie">
+  <compiler angle="degree" inertiafromgeom="auto" />
+  <option timestep="0.002" gravity="0 0 -9.81" integrator="implicitfast" cone="elliptic" />
+  <visual>
+    <global offwidth="960" offheight="600" />
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.7 0.7 0.7" />
+  </visual>
+  <default>
+    <geom friction="0.6 0.005 0.0001" condim="4" solref="0.008 1" solimp="0.9 0.95 0.001" />
+    <joint damping="0.15" />
+  </default>
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.22 0.25 0.29" rgb2="0.28 0.31 0.35" width="128" height="128" />
+    <material name="ground" texture="grid" texrepeat="10 10" />
+  </asset>
+  <worldbody>
+    <light pos="0 -3 5" dir="0 0 -1" directional="true" />
+    <geom name="floor" type="plane" size="10 10 0.1" material="ground" />
+    <geom name="obstacle" type="box" pos="1.2 0.4 0.04" size="0.15 0.2 0.04" rgba="0.75 0.52 0.25 1" />
+    <body name="chassis" pos="0 0 0.35">
+      <freejoint />
+      <geom name="box" type="box" pos="0 0 0.05" size="0.275 0.2 0.09" mass="36.0" rgba="0.83 0.86 0.90 1" />
+      <site name="imu" pos="0 0 0" size="0.01" />
+      <body name="rocker_l" pos="0 0.32 0">
+        <joint name="rocker_l" axis="0 1 0" range="-45 45" />
+        <inertial pos="0.02 0 -0.08" mass="1.5" diaginertia="0.03 0.12 0.12" />
+        <geom type="capsule" fromto="0 0 0 0.45 0 -0.22" size="0.025" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+        <geom type="capsule" fromto="0 0 0 -0.25 0 -0.12" size="0.025" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+        <body name="bogie_l" pos="-0.25 0 -0.12">
+          <joint name="bogie_l" axis="0 1 0" range="-45 45" />
+          <inertial pos="0 0 0" mass="2.5" diaginertia="0.02 0.06 0.06" />
+          <geom type="capsule" fromto="0 0 0 0.2 0 -0.1" size="0.025" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+          <geom type="capsule" fromto="0.2 0 -0.1 0.2 0.08 -0.1" size="0.02" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+          <body name="wheel_lm" pos="0.2 0.08 -0.1">
+            <joint name="drive_lm" axis="0 1 0" limited="false" damping="0.04" armature="0.0128" />
+            <geom name="tire_lm" type="cylinder" size="0.12 0.03" quat="0.707106781 0.707106781 0 0" mass="1.0" rgba="0.09 0.10 0.12 1" />
+            <geom type="box" pos="0 0.031 0" size="0.084 0.001 0.012" mass="0" contype="0" conaffinity="0" rgba="0.2 0.65 0.8 1" />
+          </body>
+          <geom type="capsule" fromto="0 0 0 -0.2 0 -0.1" size="0.025" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+          <geom type="capsule" fromto="-0.2 0 -0.1 -0.2 0.08 -0.1" size="0.02" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+          <body name="wheel_lr" pos="-0.2 0.08 -0.1">
+            <joint name="drive_lr" axis="0 1 0" limited="false" damping="0.04" armature="0.0128" />
+            <geom name="tire_lr" type="cylinder" size="0.12 0.03" quat="0.707106781 0.707106781 0 0" mass="1.0" rgba="0.09 0.10 0.12 1" />
+            <geom type="box" pos="0 0.031 0" size="0.084 0.001 0.012" mass="0" contype="0" conaffinity="0" rgba="0.2 0.65 0.8 1" />
+          </body>
+        </body>
+        <geom type="capsule" fromto="0.45 0 -0.22 0.45 0.08 -0.22" size="0.02" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+        <body name="wheel_lf" pos="0.45 0.08 -0.22">
+          <joint name="drive_lf" axis="0 1 0" limited="false" damping="0.04" armature="0.0128" />
+          <geom name="tire_lf" type="cylinder" size="0.12 0.03" quat="0.707106781 0.707106781 0 0" mass="1.0" rgba="0.09 0.10 0.12 1" />
+          <geom type="box" pos="0 0.031 0" size="0.084 0.001 0.012" mass="0" contype="0" conaffinity="0" rgba="0.2 0.65 0.8 1" />
+        </body>
+      </body>
+      <body name="rocker_r" pos="0 -0.32 0">
+        <joint name="rocker_r" axis="0 1 0" range="-45 45" />
+        <inertial pos="0.02 0 -0.08" mass="1.5" diaginertia="0.03 0.12 0.12" />
+        <geom type="capsule" fromto="0 0 0 0.45 0 -0.22" size="0.025" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+        <geom type="capsule" fromto="0 0 0 -0.25 0 -0.12" size="0.025" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+        <body name="bogie_r" pos="-0.25 0 -0.12">
+          <joint name="bogie_r" axis="0 1 0" range="-45 45" />
+          <inertial pos="0 0 0" mass="2.5" diaginertia="0.02 0.06 0.06" />
+          <geom type="capsule" fromto="0 0 0 0.2 0 -0.1" size="0.025" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+          <geom type="capsule" fromto="0.2 0 -0.1 0.2 -0.08 -0.1" size="0.02" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+          <body name="wheel_rm" pos="0.2 -0.08 -0.1">
+            <joint name="drive_rm" axis="0 1 0" limited="false" damping="0.04" armature="0.0128" />
+            <geom name="tire_rm" type="cylinder" size="0.12 0.03" quat="0.707106781 0.707106781 0 0" mass="1.0" rgba="0.09 0.10 0.12 1" />
+            <geom type="box" pos="0 -0.031 0" size="0.084 0.001 0.012" mass="0" contype="0" conaffinity="0" rgba="0.2 0.65 0.8 1" />
+          </body>
+          <geom type="capsule" fromto="0 0 0 -0.2 0 -0.1" size="0.025" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+          <geom type="capsule" fromto="-0.2 0 -0.1 -0.2 -0.08 -0.1" size="0.02" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+          <body name="wheel_rr" pos="-0.2 -0.08 -0.1">
+            <joint name="drive_rr" axis="0 1 0" limited="false" damping="0.04" armature="0.0128" />
+            <geom name="tire_rr" type="cylinder" size="0.12 0.03" quat="0.707106781 0.707106781 0 0" mass="1.0" rgba="0.09 0.10 0.12 1" />
+            <geom type="box" pos="0 -0.031 0" size="0.084 0.001 0.012" mass="0" contype="0" conaffinity="0" rgba="0.2 0.65 0.8 1" />
+          </body>
+        </body>
+        <geom type="capsule" fromto="0.45 0 -0.22 0.45 -0.08 -0.22" size="0.02" rgba="0.15 0.5 0.65 1" contype="0" conaffinity="0" />
+        <body name="wheel_rf" pos="0.45 -0.08 -0.22">
+          <joint name="drive_rf" axis="0 1 0" limited="false" damping="0.04" armature="0.0128" />
+          <geom name="tire_rf" type="cylinder" size="0.12 0.03" quat="0.707106781 0.707106781 0 0" mass="1.0" rgba="0.09 0.10 0.12 1" />
+          <geom type="box" pos="0 -0.031 0" size="0.084 0.001 0.012" mass="0" contype="0" conaffinity="0" rgba="0.2 0.65 0.8 1" />
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <equality>
+    <joint name="differential" joint1="rocker_l" joint2="rocker_r" polycoef="0 -1 0 0 0" solref="0.008 1" />
+  </equality>
+  <actuator>
+    <motor joint="drive_lf" gear="1" ctrllimited="true" ctrlrange="-12 12" />
+    <motor joint="drive_lm" gear="1" ctrllimited="true" ctrlrange="-12 12" />
+    <motor joint="drive_lr" gear="1" ctrllimited="true" ctrlrange="-12 12" />
+    <motor joint="drive_rf" gear="1" ctrllimited="true" ctrlrange="-12 12" />
+    <motor joint="drive_rm" gear="1" ctrllimited="true" ctrlrange="-12 12" />
+    <motor joint="drive_rr" gear="1" ctrllimited="true" ctrlrange="-12 12" />
+  </actuator>
+  <sensor>
+    <gyro name="gyro" site="imu" />
+  </sensor>
+</mujoco>

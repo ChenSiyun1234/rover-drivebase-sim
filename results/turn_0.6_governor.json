@@ -1,0 +1,51 @@
+{
+  "name": "turn_0.6_governor",
+  "case": {
+    "controller": "governor",
+    "mu": 0.6,
+    "velocity": 0.0,
+    "yaw_deg_s": 30.0,
+    "obstacle": false,
+    "stall": false,
+    "behaviour": "limit",
+    "watchdog": false
+  },
+  "mass_kg": 50.0,
+  "duration_s": 6.0,
+  "displacement_m": [
+    -0.09149741567504187,
+    -0.012644606674492154,
+    4.172609799424354e-05
+  ],
+  "mean_yaw_deg_s": 10.950370018572462,
+  "minimum_voltage_V": 24.610466957464816,
+  "maximum_bus_current_A": 14.738326032178243,
+  "mean_bus_current_A": 11.03053193870785,
+  "peak_winding_current_A": 7.770715240354886,
+  "fault_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "first_fault_times_s": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "fault_count": 0,
+  "peak_bogie_angle_deg": 0.06764927428641852,
+  "peak_tilt_deg": 0.016258961569359697,
+  "can_sent": 8400,
+  "can_dropped": 0,
+  "can_feedback_received": 4200,
+  "electrical_samples": 6000,
+  "physics_samples": 3000,
+  "fixture_sha256": "d6b0d446d37712378fae19bf54a5fff29b495fdff88f68db4d4b79da962db302",
+  "wall_seconds": 4.342162000000826
+}

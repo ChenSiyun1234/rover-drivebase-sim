@@ -1,0 +1,51 @@
+{
+  "name": "obstacle",
+  "case": {
+    "controller": "open",
+    "mu": 0.6,
+    "velocity": 0.3,
+    "yaw_deg_s": 0.0,
+    "obstacle": true,
+    "stall": false,
+    "behaviour": "limit",
+    "watchdog": false
+  },
+  "mass_kg": 50.0,
+  "duration_s": 6.0,
+  "displacement_m": [
+    1.6550368511941078,
+    0.12561237164683345,
+    0.012787813639218493
+  ],
+  "mean_yaw_deg_s": 0.0001246054042620794,
+  "minimum_voltage_V": 24.573372838273645,
+  "maximum_bus_current_A": 15.665679098482846,
+  "mean_bus_current_A": 3.2071245803057415,
+  "peak_winding_current_A": 8.0,
+  "fault_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "first_fault_times_s": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "fault_count": 0,
+  "peak_bogie_angle_deg": 14.682235987010767,
+  "peak_tilt_deg": 4.262771019790488,
+  "can_sent": 8400,
+  "can_dropped": 0,
+  "can_feedback_received": 4200,
+  "electrical_samples": 6000,
+  "physics_samples": 3000,
+  "fixture_sha256": "a3085af59f779faee7e101ae9f8c56a1dd91bd268b8c6d3c10dcaa6a3f55515f",
+  "wall_seconds": 2.1248783999981242
+}

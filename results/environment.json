@@ -1,0 +1,12 @@
+{
+  "python": "3.12.8",
+  "packages": {
+    "mujoco": "4.0.0",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1",
+    "imageio": "2.38.1",
+    "pillow": "10.4.0",
+    "scipy": "1.18.0",
+    "pytest": "9.1.1"
+  }
+}

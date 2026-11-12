@@ -1,0 +1,11 @@
+{
+  "frames": 120,
+  "frame_period_s": 0.05,
+  "wall_seconds": 3.3476087000017287,
+  "renderer_sha256": "87c77ed654b659a69399c39325a17b1b164c00a69eafe3b80b703c29a34d4d4e",
+  "source_sha256": "626b777ae7bc0a265a92b9bb81aff7f5ab0e638ffd9ecc1e4c414e9ce8117d17",
+  "files": {
+    "media/rover_drive.gif": 2470962,
+    "media/rover.png": 38752
+  }
+}

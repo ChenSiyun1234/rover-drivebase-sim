@@ -1,0 +1,1166 @@
+{
+  "scenarios": [
+    {
+      "name": "straight",
+      "case": {
+        "controller": "open",
+        "mu": 0.6,
+        "velocity": 0.3,
+        "yaw_deg_s": 0.0,
+        "obstacle": false,
+        "stall": false,
+        "behaviour": "limit",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        1.7937890566865045,
+        2.6088352581115177e-14,
+        -1.2297279861073207e-10
+      ],
+      "mean_yaw_deg_s": 3.4430027545687032e-12,
+      "minimum_voltage_V": 25.065351883694525,
+      "maximum_bus_current_A": 3.366203276389985,
+      "mean_bus_current_A": 0.13407704086910632,
+      "peak_winding_current_A": 2.500001366088817,
+      "fault_codes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 0,
+      "peak_bogie_angle_deg": 0.002423401149099005,
+      "peak_tilt_deg": 0.0022912655440382227,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "d6b0d446d37712378fae19bf54a5fff29b495fdff88f68db4d4b79da962db302",
+      "wall_seconds": 2.72923830000218
+    },
+    {
+      "name": "obstacle",
+      "case": {
+        "controller": "open",
+        "mu": 0.6,
+        "velocity": 0.3,
+        "yaw_deg_s": 0.0,
+        "obstacle": true,
+        "stall": false,
+        "behaviour": "limit",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        1.6550368511941078,
+        0.12561237164683345,
+        0.012787813639218493
+      ],
+      "mean_yaw_deg_s": 0.0001246054042620794,
+      "minimum_voltage_V": 24.573372838273645,
+      "maximum_bus_current_A": 15.665679098482846,
+      "mean_bus_current_A": 3.2071245803057415,
+      "peak_winding_current_A": 8.0,
+      "fault_codes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 0,
+      "peak_bogie_angle_deg": 14.682235987010767,
+      "peak_tilt_deg": 4.262771019790488,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "a3085af59f779faee7e101ae9f8c56a1dd91bd268b8c6d3c10dcaa6a3f55515f",
+      "wall_seconds": 2.1248783999981242
+    },
+    {
+      "name": "stall",
+      "case": {
+        "controller": "open",
+        "mu": 0.6,
+        "velocity": 0.0,
+        "yaw_deg_s": 0.0,
+        "obstacle": false,
+        "stall": true,
+        "behaviour": "limit",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        6.081886430779446e-05,
+        -3.225601721236314e-11,
+        4.313216450668733e-14
+      ],
+      "mean_yaw_deg_s": -2.1315556211661858e-08,
+      "minimum_voltage_V": 23.739367189630865,
+      "maximum_bus_current_A": 36.515819729338965,
+      "mean_bus_current_A": 36.38148305995722,
+      "peak_winding_current_A": 8.0,
+      "fault_codes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 0,
+      "peak_bogie_angle_deg": 0.0009398868683192449,
+      "peak_tilt_deg": 0.0006388149857997357,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "4766ee17798547d7280ec1b472065e6e27ec5621bdb1ff588279367b3723c0e7",
+      "wall_seconds": 2.096849100002146
+    },
+    {
+      "name": "watchdog",
+      "case": {
+        "controller": "open",
+        "mu": 0.6,
+        "velocity": 0.3,
+        "yaw_deg_s": 0.0,
+        "obstacle": false,
+        "stall": false,
+        "behaviour": "limit",
+        "watchdog": true
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        1.358182410599123,
+        -8.553890650476786e-16,
+        -1.1335479443985719e-08
+      ],
+      "mean_yaw_deg_s": -7.515375023584912e-17,
+      "minimum_voltage_V": 25.065351883694525,
+      "maximum_bus_current_A": 3.366203276389985,
+      "mean_bus_current_A": 0.09347682608571231,
+      "peak_winding_current_A": 2.500001366088817,
+      "fault_codes": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        13
+      ],
+      "first_fault_times_s": [
+        2.242,
+        2.242,
+        2.242,
+        2.242,
+        2.242,
+        2.242
+      ],
+      "fault_count": 6,
+      "peak_bogie_angle_deg": 0.002423401149099005,
+      "peak_tilt_deg": 0.0022912655440382227,
+      "can_sent": 3600,
+      "can_dropped": 0,
+      "can_feedback_received": 1800,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "d6b0d446d37712378fae19bf54a5fff29b495fdff88f68db4d4b79da962db302",
+      "wall_seconds": 2.0755348000020604
+    },
+    {
+      "name": "turn_trip",
+      "case": {
+        "controller": "open",
+        "mu": 0.9,
+        "velocity": 0.0,
+        "yaw_deg_s": 30.0,
+        "obstacle": false,
+        "stall": false,
+        "behaviour": "trip",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        1.3794665211016404,
+        0.04851601010953456,
+        2.6957089321766325e-05
+      ],
+      "mean_yaw_deg_s": 0.17112338832904025,
+      "minimum_voltage_V": 24.341416307911285,
+      "maximum_bus_current_A": 21.464591968993282,
+      "mean_bus_current_A": 6.981211347863413,
+      "peak_winding_current_A": 7.97814606698223,
+      "fault_codes": [
+        10,
+        10,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        1.346,
+        1.308,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 2,
+      "peak_bogie_angle_deg": 0.061920369475451036,
+      "peak_tilt_deg": 0.0166975364587895,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "3e7e9111a6d5760cd719b10e28248a7063b6ef024d1f13dc5a600368d80664d3",
+      "wall_seconds": 2.2054871000000276
+    },
+    {
+      "name": "turn_0.3_open",
+      "case": {
+        "controller": "open",
+        "mu": 0.3,
+        "velocity": 0.0,
+        "yaw_deg_s": 30.0,
+        "obstacle": false,
+        "stall": false,
+        "behaviour": "limit",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        -0.08770694009553236,
+        0.006306684301803574,
+        5.005288060061508e-05
+      ],
+      "mean_yaw_deg_s": 21.130709889311586,
+      "minimum_voltage_V": 25.024089940264826,
+      "maximum_bus_current_A": 4.397751437879686,
+      "mean_bus_current_A": 3.53044555750932,
+      "peak_winding_current_A": 3.8922624355397053,
+      "fault_codes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 0,
+      "peak_bogie_angle_deg": 0.06367672490337294,
+      "peak_tilt_deg": 0.01798631154666175,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "e5e8a6cbf7dd128ebf9a74340fae19647205f9a6603de8f5fefe282a0a12b15d",
+      "wall_seconds": 2.2862623000037274
+    },
+    {
+      "name": "turn_0.3_pi",
+      "case": {
+        "controller": "pi",
+        "mu": 0.3,
+        "velocity": 0.0,
+        "yaw_deg_s": 30.0,
+        "obstacle": false,
+        "stall": false,
+        "behaviour": "limit",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        -0.09815594113954289,
+        -0.03531634046283179,
+        3.182340713431264e-05
+      ],
+      "mean_yaw_deg_s": 29.501263954002955,
+      "minimum_voltage_V": 24.2459795024246,
+      "maximum_bus_current_A": 23.85051252867418,
+      "mean_bus_current_A": 4.212866283201237,
+      "peak_winding_current_A": 6.544883663604582,
+      "fault_codes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 0,
+      "peak_bogie_angle_deg": 0.07456305532090415,
+      "peak_tilt_deg": 0.017420310698929756,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "e5e8a6cbf7dd128ebf9a74340fae19647205f9a6603de8f5fefe282a0a12b15d",
+      "wall_seconds": 2.3043751000004704
+    },
+    {
+      "name": "turn_0.3_governor",
+      "case": {
+        "controller": "governor",
+        "mu": 0.3,
+        "velocity": 0.0,
+        "yaw_deg_s": 30.0,
+        "obstacle": false,
+        "stall": false,
+        "behaviour": "limit",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        -0.08770694009553236,
+        0.006306684301803574,
+        5.005288060061508e-05
+      ],
+      "mean_yaw_deg_s": 21.130709889311586,
+      "minimum_voltage_V": 25.024089940264826,
+      "maximum_bus_current_A": 4.397751437879686,
+      "mean_bus_current_A": 3.53044555750932,
+      "peak_winding_current_A": 3.8922624355397053,
+      "fault_codes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 0,
+      "peak_bogie_angle_deg": 0.06367672490337294,
+      "peak_tilt_deg": 0.01798631154666175,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "e5e8a6cbf7dd128ebf9a74340fae19647205f9a6603de8f5fefe282a0a12b15d",
+      "wall_seconds": 2.756306700001005
+    },
+    {
+      "name": "turn_0.6_open",
+      "case": {
+        "controller": "open",
+        "mu": 0.6,
+        "velocity": 0.0,
+        "yaw_deg_s": 30.0,
+        "obstacle": false,
+        "stall": false,
+        "behaviour": "limit",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        -0.10251954866832558,
+        -0.032859775810643616,
+        5.856208197135837e-05
+      ],
+      "mean_yaw_deg_s": 17.018280368152187,
+      "minimum_voltage_V": 24.55705691389739,
+      "maximum_bus_current_A": 16.073577433118267,
+      "mean_bus_current_A": 11.510690297300288,
+      "peak_winding_current_A": 8.0,
+      "fault_codes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 0,
+      "peak_bogie_angle_deg": 0.08746524419124681,
+      "peak_tilt_deg": 0.01937447304615032,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "d6b0d446d37712378fae19bf54a5fff29b495fdff88f68db4d4b79da962db302",
+      "wall_seconds": 4.256323200002953
+    },
+    {
+      "name": "turn_0.6_pi",
+      "case": {
+        "controller": "pi",
+        "mu": 0.6,
+        "velocity": 0.0,
+        "yaw_deg_s": 30.0,
+        "obstacle": false,
+        "stall": false,
+        "behaviour": "limit",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        -0.09411063390955396,
+        -0.12763469066744457,
+        0.00016524719616256567
+      ],
+      "mean_yaw_deg_s": 29.16757864669718,
+      "minimum_voltage_V": 24.242868079617615,
+      "maximum_bus_current_A": 23.928297856875194,
+      "mean_bus_current_A": 14.464240459538145,
+      "peak_winding_current_A": 8.0,
+      "fault_codes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 0,
+      "peak_bogie_angle_deg": 0.11871128277378225,
+      "peak_tilt_deg": 0.033974361206521336,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "d6b0d446d37712378fae19bf54a5fff29b495fdff88f68db4d4b79da962db302",
+      "wall_seconds": 3.734031899999536
+    },
+    {
+      "name": "turn_0.6_governor",
+      "case": {
+        "controller": "governor",
+        "mu": 0.6,
+        "velocity": 0.0,
+        "yaw_deg_s": 30.0,
+        "obstacle": false,
+        "stall": false,
+        "behaviour": "limit",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        -0.09149741567504187,
+        -0.012644606674492154,
+        4.172609799424354e-05
+      ],
+      "mean_yaw_deg_s": 10.950370018572462,
+      "minimum_voltage_V": 24.610466957464816,
+      "maximum_bus_current_A": 14.738326032178243,
+      "mean_bus_current_A": 11.03053193870785,
+      "peak_winding_current_A": 7.770715240354886,
+      "fault_codes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 0,
+      "peak_bogie_angle_deg": 0.06764927428641852,
+      "peak_tilt_deg": 0.016258961569359697,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "d6b0d446d37712378fae19bf54a5fff29b495fdff88f68db4d4b79da962db302",
+      "wall_seconds": 4.342162000000826
+    },
+    {
+      "name": "turn_0.9_open",
+      "case": {
+        "controller": "open",
+        "mu": 0.9,
+        "velocity": 0.0,
+        "yaw_deg_s": 30.0,
+        "obstacle": false,
+        "stall": false,
+        "behaviour": "limit",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        -0.17587679436063383,
+        -0.03369764223198887,
+        7.285254228783788e-05
+      ],
+      "mean_yaw_deg_s": 7.481563337549925,
+      "minimum_voltage_V": 24.1901040058583,
+      "maximum_bus_current_A": 25.247400249806745,
+      "mean_bus_current_A": 20.27619610091346,
+      "peak_winding_current_A": 8.0,
+      "fault_codes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 0,
+      "peak_bogie_angle_deg": 0.06996346966008665,
+      "peak_tilt_deg": 0.018089163360681004,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "3e7e9111a6d5760cd719b10e28248a7063b6ef024d1f13dc5a600368d80664d3",
+      "wall_seconds": 4.316084799997043
+    },
+    {
+      "name": "turn_0.9_pi",
+      "case": {
+        "controller": "pi",
+        "mu": 0.9,
+        "velocity": 0.0,
+        "yaw_deg_s": 30.0,
+        "obstacle": false,
+        "stall": false,
+        "behaviour": "limit",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        -0.20599674702601156,
+        -0.3190587316690415,
+        0.00020447699409692488
+      ],
+      "mean_yaw_deg_s": 23.396593106992615,
+      "minimum_voltage_V": 23.70441506914794,
+      "maximum_bus_current_A": 37.389623356125455,
+      "mean_bus_current_A": 27.377853923738247,
+      "peak_winding_current_A": 8.0,
+      "fault_codes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 0,
+      "peak_bogie_angle_deg": 0.3945661034382946,
+      "peak_tilt_deg": 0.07961992773339797,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "3e7e9111a6d5760cd719b10e28248a7063b6ef024d1f13dc5a600368d80664d3",
+      "wall_seconds": 4.025924900000973
+    },
+    {
+      "name": "turn_0.9_governor",
+      "case": {
+        "controller": "governor",
+        "mu": 0.9,
+        "velocity": 0.0,
+        "yaw_deg_s": 30.0,
+        "obstacle": false,
+        "stall": false,
+        "behaviour": "limit",
+        "watchdog": false
+      },
+      "mass_kg": 50.0,
+      "duration_s": 6.0,
+      "displacement_m": [
+        -0.0293416433313269,
+        0.009467760025435534,
+        6.908033283126169e-06
+      ],
+      "mean_yaw_deg_s": 0.881874052320433,
+      "minimum_voltage_V": 24.29386824555695,
+      "maximum_bus_current_A": 22.653294038742914,
+      "mean_bus_current_A": 18.51972219126095,
+      "peak_winding_current_A": 8.0,
+      "fault_codes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_fault_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fault_count": 0,
+      "peak_bogie_angle_deg": 0.05292520759411189,
+      "peak_tilt_deg": 0.013722948643425404,
+      "can_sent": 8400,
+      "can_dropped": 0,
+      "can_feedback_received": 4200,
+      "electrical_samples": 6000,
+      "physics_samples": 3000,
+      "fixture_sha256": "3e7e9111a6d5760cd719b10e28248a7063b6ef024d1f13dc5a600368d80664d3",
+      "wall_seconds": 4.309957299999951
+    }
+  ],
+  "parameters": {
+    "rated_voltage": [
+      24.0,
+      "V",
+      "datasheet"
+    ],
+    "rated_torque": [
+      4.0,
+      "N m",
+      "datasheet"
+    ],
+    "peak_torque": [
+      12.0,
+      "N m",
+      "datasheet"
+    ],
+    "rated_current": [
+      4.0,
+      "A",
+      "datasheet"
+    ],
+    "peak_current": [
+      13.0,
+      "A",
+      "datasheet"
+    ],
+    "rated_speed": [
+      150.0,
+      "rpm",
+      "datasheet"
+    ],
+    "no_load_speed": [
+      240.0,
+      "rpm",
+      "datasheet"
+    ],
+    "gear_ratio": [
+      6.0,
+      "ratio",
+      "datasheet"
+    ],
+    "motor_diameter": [
+      0.076,
+      "m",
+      "datasheet"
+    ],
+    "motor_length": [
+      0.0365,
+      "m",
+      "datasheet"
+    ],
+    "motor_mass": [
+      0.335,
+      "kg",
+      "datasheet"
+    ],
+    "wheel_radius": [
+      0.12,
+      "m",
+      "assumed"
+    ],
+    "wheel_width": [
+      0.06,
+      "m",
+      "assumed"
+    ],
+    "track": [
+      0.8,
+      "m",
+      "assumed"
+    ],
+    "front_x": [
+      0.45,
+      "m",
+      "assumed"
+    ],
+    "middle_x": [
+      -0.05,
+      "m",
+      "assumed"
+    ],
+    "rear_x": [
+      -0.45,
+      "m",
+      "assumed"
+    ],
+    "link_y": [
+      0.32,
+      "m",
+      "assumed"
+    ],
+    "bogie_x": [
+      -0.25,
+      "m",
+      "assumed"
+    ],
+    "bogie_z": [
+      -0.12,
+      "m relative to chassis",
+      "assumed"
+    ],
+    "axle_z": [
+      -0.22,
+      "m relative to chassis",
+      "assumed"
+    ],
+    "initial_height": [
+      0.35,
+      "m",
+      "assumed"
+    ],
+    "box_size": [
+      [
+        0.55,
+        0.4,
+        0.18
+      ],
+      "m full lengths",
+      "assumed"
+    ],
+    "box_z": [
+      0.05,
+      "m relative to chassis",
+      "assumed"
+    ],
+    "chassis_mass": [
+      36.0,
+      "kg including battery/electronics",
+      "assumed"
+    ],
+    "rocker_mass": [
+      1.5,
+      "kg each",
+      "assumed"
+    ],
+    "bogie_mass": [
+      2.5,
+      "kg each",
+      "assumed"
+    ],
+    "wheel_mass": [
+      1.0,
+      "kg each including motor",
+      "assumed"
+    ],
+    "rocker_com": [
+      [
+        0.02,
+        0.0,
+        -0.08
+      ],
+      "m local",
+      "assumed"
+    ],
+    "rocker_inertia": [
+      [
+        0.03,
+        0.12,
+        0.12
+      ],
+      "kg m^2 diagonal",
+      "assumed"
+    ],
+    "bogie_inertia": [
+      [
+        0.02,
+        0.06,
+        0.06
+      ],
+      "kg m^2 diagonal",
+      "assumed"
+    ],
+    "link_radius": [
+      0.025,
+      "m",
+      "assumed"
+    ],
+    "axle_radius": [
+      0.02,
+      "m",
+      "assumed"
+    ],
+    "wheel_armature": [
+      0.0128,
+      "kg m^2 output referred",
+      "assumed"
+    ],
+    "free_inertia": [
+      0.02,
+      "kg m^2 cylinder plus armature",
+      "assumed"
+    ],
+    "drive_damping": [
+      0.04,
+      "N m s/rad",
+      "assumed"
+    ],
+    "hinge_damping": [
+      0.15,
+      "N m s/rad",
+      "assumed"
+    ],
+    "hinge_range": [
+      45.0,
+      "degrees each direction",
+      "assumed"
+    ],
+    "gravity": [
+      9.81,
+      "m/s^2",
+      "assumed"
+    ],
+    "friction": [
+      [
+        0.6,
+        0.005,
+        0.0001
+      ],
+      "sliding, torsional m, rolling m",
+      "assumed"
+    ],
+    "friction_sweep": [
+      [
+        0.3,
+        0.6,
+        0.9
+      ],
+      "sliding coefficient",
+      "assumed"
+    ],
+    "contact_dimension": [
+      4,
+      "MuJoCo condim",
+      "assumed"
+    ],
+    "contact_solref": [
+      [
+        0.008,
+        1.0
+      ],
+      "s, damping ratio",
+      "assumed"
+    ],
+    "contact_solimp": [
+      [
+        0.9,
+        0.95,
+        0.001
+      ],
+      "MuJoCo impedance",
+      "assumed"
+    ],
+    "obstacle_position": [
+      [
+        1.2,
+        0.4,
+        0.04
+      ],
+      "m",
+      "assumed"
+    ],
+    "obstacle_half_size": [
+      [
+        0.15,
+        0.2,
+        0.04
+      ],
+      "m",
+      "assumed"
+    ],
+    "floor_half_size": [
+      [
+        10.0,
+        10.0,
+        0.1
+      ],
+      "m",
+      "assumed"
+    ],
+    "pack_voltage": [
+      25.2,
+      "V open circuit",
+      "assumed"
+    ],
+    "pack_resistance": [
+      0.04,
+      "ohm pack and wiring",
+      "assumed"
+    ],
+    "bus_warning": [
+      20.0,
+      "V reporting threshold",
+      "assumed"
+    ],
+    "driver_undervoltage": [
+      15.0,
+      "V latch threshold",
+      "assumed"
+    ],
+    "driver_current": [
+      8.0,
+      "A limit or immediate trip setting",
+      "assumed"
+    ],
+    "watchdog_timeout": [
+      0.25,
+      "s since delivered command",
+      "assumed"
+    ],
+    "motor_kp": [
+      1.0,
+      "N m/(rad/s)",
+      "assumed"
+    ],
+    "motor_ki": [
+      2.0,
+      "N m/rad",
+      "assumed"
+    ],
+    "kinematic_multiplier": [
+      1.25,
+      "effective track multiplier",
+      "assumed"
+    ],
+    "yaw_kp": [
+      2.0,
+      "ratio",
+      "assumed"
+    ],
+    "yaw_ki": [
+      1.0,
+      "1/s",
+      "assumed"
+    ],
+    "gyro_noise": [
+      0.01,
+      "rad/s standard deviation",
+      "assumed"
+    ],
+    "governor_high": [
+      0.85,
+      "fraction of current setting",
+      "assumed"
+    ],
+    "governor_low": [
+      0.75,
+      "fraction of current setting",
+      "assumed"
+    ],
+    "governor_decay": [
+      4.0,
+      "1/s",
+      "assumed"
+    ],
+    "governor_recovery": [
+      0.03,
+      "1/s",
+      "assumed"
+    ],
+    "physics_dt": [
+      0.002,
+      "s",
+      "assumed"
+    ],
+    "electrical_dt": [
+      0.001,
+      "s",
+      "assumed"
+    ],
+    "command_period": [
+      0.01,
+      "s",
+      "assumed"
+    ],
+    "can_delay": [
+      0.001,
+      "s per frame",
+      "assumed"
+    ],
+    "command_drop": [
+      0.0,
+      "probability",
+      "assumed"
+    ],
+    "feedback_drop": [
+      0.0,
+      "probability",
+      "assumed"
+    ],
+    "seed": [
+      7,
+      "random seed",
+      "assumed"
+    ],
+    "settle_time": [
+      1.0,
+      "s",
+      "assumed"
+    ],
+    "duration": [
+      6.0,
+      "s after settling",
+      "assumed"
+    ],
+    "straight_speed": [
+      0.3,
+      "m/s command",
+      "assumed"
+    ],
+    "yaw_command": [
+      30.0,
+      "degrees/s command",
+      "assumed"
+    ],
+    "stall_target": [
+      100.0,
+      "rad/s command with ideal wheel locks",
+      "assumed"
+    ],
+    "command_cutoff": [
+      2.0,
+      "s after settling",
+      "assumed"
+    ],
+    "steady_window": [
+      2.0,
+      "s at end of trial",
+      "assumed"
+    ],
+    "battery_iterations": [
+      28,
+      "bisection iterations",
+      "assumed"
+    ]
+  },
+  "source_sha256": {
+    "sim/parameters.py": "bd399f7668089a65fb6df2e68a3f38e5e21caa5577ad49555197d9a16989ac0b",
+    "sim/motor.py": "dc6daa29cf5a8993b254d3178d28eb5f2f6e8ccdade661c4c03f197c5c955ccf",
+    "sim/power.py": "3bba367e4eaf8bca686c39f5eae7b563ee683731dc6e39a803956f72fd70da71",
+    "sim/can_dm.py": "1a64573945be96eac5f86d7c4d3e7574d07f2fdbdf868fb27b7160322f4d0ec5",
+    "sim/drive.py": "31acec30e06728e985d9e73350e4c37ebdddc86566882a353a74816c73cfe2a6",
+    "viz/build_rover.py": "5b975244f70588f7e7eafa4a7f3f5ef6a710b950549de4e837c0336a56ed4132",
+    "experiments/run_all.py": "be8bf4377e8ccc1a38c589f3c61f95e6d1140265d8e4bfd7d255b01c80c11acd",
+    "viz/scene/rover_scene.xml": "f7a61e663159c110230c0f385e8b920a015acf941e4a37e352c4f08cae4194e0"
+  },
+  "numpy_version": "2.5.2",
+  "mujoco_version": "4.0.0",
+  "wall_seconds": 44.87282680000499
+}

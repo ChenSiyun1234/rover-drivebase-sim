@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "scenarios": [
+    "straight",
+    "obstacle",
+    "stall",
+    "watchdog",
+    "turn_trip",
+    "turn_0.3_open",
+    "turn_0.3_pi",
+    "turn_0.3_governor",
+    "turn_0.6_open",
+    "turn_0.6_pi",
+    "turn_0.6_governor",
+    "turn_0.9_open",
+    "turn_0.9_pi",
+    "turn_0.9_governor"
+  ],
+  "checks": [
+    "source hashes",
+    "finite arrays",
+    "sample counts and timing",
+    "unit quaternions",
+    "motor envelope",
+    "torque clipping",
+    "bus power and sag",
+    "fault torque removal",
+    "summary reconstruction",
+    "pose stability",
+    "static weight support",
+    "stall locks",
+    "watchdog latching"
+  ]
+}
